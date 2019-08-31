@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/reviewLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                tools:context=".activity.ReviewActivity">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/view" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_prize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_35"
+                        android:layout_marginRight="@dimen/dp_35"
+                        android:padding="@dimen/dp_10"
+                        android:text="Price                             :"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_15" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/price_icon"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/tv_prize"
+                        android:layout_toRightOf="@+id/tv_prize"
+                        android:src="@drawable/ic_rupee_icon" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_total_prize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:layout_toEndOf="@+id/price_icon"
+                        android:layout_toRightOf="@+id/price_icon"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_15" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/view" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/text_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="@dimen/dp_1"
+                    android:text="Select Date"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_15" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/horizontal_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/view" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/text_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="@dimen/dp_1"
+                    android:text="@string/select_time"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_15" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/buttonSlot1"
+                        android:layout_width="@dimen/dp_140"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_above="@+id/buttonSlot3"
+                        android:layout_marginLeft="@dimen/dp_30"
+                        android:layout_marginRight="@dimen/dp_30"
+                        android:background="@drawable/schedule_bg"
+                        android:clickable="true"
+                        android:text="@string/_10_00_to_12_00"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/buttonSlot2"
+                        android:layout_width="@dimen/dp_140"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_below="@+id/ViewSelecttime"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_toEndOf="@+id/buttonSlot1"
+                        android:layout_toRightOf="@+id/buttonSlot1"
+                        android:background="@drawable/schedule_bg"
+                        android:clickable="true"
+                        android:text="10:00 to 12:00"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        tools:ignore="UnknownId" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/buttonSlot3"
+                        android:layout_width="@dimen/dp_140"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_below="@+id/buttonSlot2"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="@dimen/dp_30"
+                        android:layout_marginRight="@dimen/dp_30"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:background="@drawable/schedule_bg"
+                        android:clickable="true"
+                        android:text="02:00 to 04:00"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary" />
+
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/buttonSlot4"
+                        android:layout_width="@dimen/dp_140"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_alignBottom="@+id/buttonSlot3"
+                        android:layout_alignEnd="@+id/buttonSlot2"
+                        android:layout_alignLeft="@+id/buttonSlot2"
+                        android:layout_alignRight="@+id/buttonSlot2"
+                        android:layout_alignStart="@+id/buttonSlot2"
+                        android:background="@drawable/schedule_bg"
+                        android:clickable="true"
+                        android:text="04:00 to 06:00"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_default_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="48dp">
+
+                    <TextView
+                        android:id="@+id/tv_Login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="@dimen/dp_16"
+                        android:text="@string/first_login"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_14"
+                        android:visibility="gone" />
+
+                    <View
+                        android:id="@+id/view_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_below="@id/tv_Login"
+                        android:background="@color/view" />
+
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="@dimen/dp_16"
+                        android:text="@string/select_address"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_14"
+                        android:visibility="gone" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_below="@id/tv_address"
+                        android:background="@color/view" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btn_add_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_click_background"
+            android:clickable="true"
+            android:paddingBottom="@dimen/dp_15"
+            android:paddingTop="@dimen/dp_15"
+            android:text="@string/add_to_cart"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</RelativeLayout>

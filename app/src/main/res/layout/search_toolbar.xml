@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:contentInsetEndWithActions="0dp"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dropDownAnchor="@+id/header"
+        android:dropDownWidth="match_parent"
+        android:hint="@string/search_your_service"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:textColorHint="@color/white"
+        android:theme="@style/Autocomplete" />
+
+    <requestFocus />
+    <!--</AutoCompleteTextView>-->
+</android.support.v7.widget.Toolbar>

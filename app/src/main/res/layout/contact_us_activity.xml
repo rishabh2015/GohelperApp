@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.ContactUsActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_my_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:paddingBottom="@dimen/dp_80">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="you can call our team member"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/dp_5"
+                android:src="@drawable/telephone" />
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_2"
+                android:layout_below="@+id/iv_call"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/colorPrimary" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_call_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view6"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_5"
+                android:clickable="true"
+                android:text="Call Now"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12" />
+
+
+            <TextView
+                android:id="@+id/tv_any_query"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_call_now"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="please write to us for any queries"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/nameLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_any_query"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_20"
+                android:paddingRight="@dimen/dp_20"
+                app:hintTextAppearance="@style/TextLabel">
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:ems="28"
+                    android:hint="@string/full_name"
+                    android:inputType="textPersonName"
+                    android:maxLength="28"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp_14" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/phoneLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameLayout"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_1"
+                android:paddingLeft="@dimen/dp_20"
+                android:paddingRight="@dimen/dp_20">
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:ems="28"
+                    android:hint="@string/phone_number"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp_14" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/emailIDLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneLayout"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_1"
+                android:paddingLeft="@dimen/dp_20"
+                android:paddingRight="@dimen/dp_20">
+
+                <EditText
+                    android:id="@+id/et_email_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:ems="28"
+                    android:hint="@string/email_id"
+                    android:maxLength="28"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp_14" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="322dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/emailIDLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/call_member_bg_design"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_5"
+                android:spinnerMode="dropdown" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/queryLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_1"
+                android:paddingLeft="@dimen/dp_20"
+                android:paddingRight="@dimen/dp_20">
+
+                <EditText
+                    android:id="@+id/et_query"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:ems="100"
+                    android:hint="@string/query"
+                    android:textSize="@dimen/sp_14" />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/button_click_background"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,162 @@
+<resources>
+    <string name="app_name">hyperLocal</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="facebook_app_id">560171040840666</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="btnGetOTP">GET OTP</string>
+    <string name="app_id">670544446443115</string>
+    <string name="action_cart">Share</string>
+    <string name="action_notification">Search</string>
+    <string name="refer_earn">Refer &amp; Earn</string>
+    <string name="err_msg_name">Enter your full name</string>
+    <string name="err_msg_first_name">Enter your first name</string>
+    <string name="err_msg_last_name">Enter your last name</string>
+    <string name="err_msg_mobile">Enter valid mobile number</string>
+    <string name="err_invalid_mobile">Invalid mobile number</string>
+    <string name="err_msg_locality">Enter the locality</string>
+    <string name="err_msg_address">Enter the postal Address</string>
+    <string name="err_msg_landmark">Enter the landmark</string>
+    <string name="err_msg_email">Enter your email id</string>
+    <string name="err_msg_profession">Enter your profession</string>
+
+
+    <string name="emergency_customers"><u>Emeregency Services</u></string>
+
+    <string name="bulleted_list">
+        <li>Trained and Certified Plumbers</li>\n
+        <li>Background Verified Staff</li>\n
+        <li>Guaranteed Quality of Service</li>\n
+        <li>Insurance Against Damages</li>
+    </string>
+      <string name="bulleted_list_happy_customer">
+        Trained and Certified Plumbers\nBackground Verified Staff\nGuaranteed Quality of Service\n
+    </string>
+
+    <string name="bulleted_appliance">
+        <li>Expert and Certified Technicians</li>\n
+        <li>Hassie-free Booking and Guaranteed Satisfaction</li>\n
+        <li>Best Prices</li>
+            </string>
+
+        <string name="bulleted_tap">
+        <li>Rate -Includes labour charges only.Any parts that require \n replacement will be extra,based on actuals.</li>\n\n
+        <li>Fitting or Installation -Removal of the spoilt tap and Fixing \n new one.</li>\n\n
+        <li>Tap Repair -Checking for old washers/spindles &amp; replacing \n them. </li>
+
+    </string>
+
+     <string name="carousel_home">
+        <li>Rate - Includes labour charges only.Any parts that  </li>\n
+        <li>Fitting or Installation - Removal of the spoilt tap </li>
+
+    </string>
+    <string name="furniture_and_furnishings">Furniture And Furnishings-Fabric\n Sofa Shampooing</string>
+    <string name="scheduled_date_and_time">Scheduled Date and Time</string>
+    <string name="date_and_time">11-Nov-2016 | 10:00 AM -08:00 PM</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="order_summary_address">A4, 1702, Saviour Green\n Isle, Crossing Republik</string>
+
+    <!-- Button text -->
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+    <string name="loading">Loading...</string>
+    <string name="share_the_love_by_inviting_your_friends">Share the love by inviting your friends\n\n</string>
+    <string name="view_job_details">View Job Details -</string>
+    <string name="disclaimers">Disclaimers</string>
+    <string name="happy_customers">Happy Customers</string>
+    <string name="why_gohelper">Why hyperLocal?</string>
+    <string name="share_the_love">Share the love</string>
+    <string name="add_new_address">Add New Address</string>
+    <string name="please_make_sure">Please make sure you have a working SMS plan</string>
+    <string name="verifying">Sit back and relax . We\'ll notify you when we\'re done verifying</string>
+    <string name="waiting_for_automatically">Waiting for automatically detect ab SMS sent to</string>
+    <string name="home_cleaning_services">Home Cleaning Services</string>
+    <string name="wallet_balance">Wallet Balance</string>
+    <string name="i_have_gohelper_cash_coupon">I have hyperLocal Cash Coupon</string>
+    <string name="qty_08">Qty : 08</string>
+    <string name="job_status">Job Status</string>
+    <string name="schuduled_on">Schuduled On</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="grand_total">Grand Total</string>
+    <string name="contact_details">Contact Details</string>
+    <string name="name">Name :</string>
+    <string name="mobile_number">Mobile Number :</string>
+    <string name="address">Address :</string>
+    <string name="title">Address </string>
+    <string name="select_service">Select Service</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="select_time">Select Time</string>
+    <string name="_10_00_to_12_00">08:00 to 10:00</string>
+    <string name="add_address">Add Address</string>
+    <string name="confirm_booking">Confirm Booking</string>
+    <string name="taps">Taps</string>
+    <string name="repair">Repair</string>
+    <string name="select_need">Select Need</string>
+    <string name="macbooks">MacBooks</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="enter_your_phone_number">Enter Your Phone Number</string>
+    <string name="enter_your_number">Phone Number?</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="logo">Logo</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="your_locality">Your Locality</string>
+    <string name="house_no_street_area">House No/ Street/ Area</string>
+    <string name="landmark">Landmark (Optional)</string>
+    <string name="save">Save</string>
+    <string name="submit">Submit</string>
+    <string name="search_for_a_device">What services are you looking today?</string>
+    <string name="title_activity_otp_verify">Otp Verification</string>
+    <string name="rupees">Rupees</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="verify">Verify</string>
+    <string name="skip">Skip Now</string>
+    <string name="professional_field">Professional Field</string>
+    <string name="email_id">Email Id</string>
+    <string name="query">Query</string>
+    <string name="nameProfile">First Name</string>
+    <string name="manage_address">Manage Address</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="order_detail">Order Details</string>
+    <string name="resend">Resend OTP</string>
+    <string name="last_name">Last Name</string>
+    <string name="add_your_current_location">Add your Current Location.</string>
+    <string name="edit_phone_number"><u>Edit Phone Number</u></string>
+    <string name="title_activity_location">Map</string>
+    <string name="search_items">Search items</string>
+    <string name="gohelper">hyperLocal</string>
+    <string name="gohelper_in">hyperLocal.in</string>
+    <string name="next">Next</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Payment_Options">Payment Options</string>
+    <string name="description">Description</string>
+    <string name="continue_shopping"><u>Click here to book your service..Continue Shopping!</u></string>
+    <string name="thanku_for_using_service">Thank you for using hyperLocal services,</string>
+    <string name="enjoy_your_purchse">we hope you enjoy your purchase!</string>
+    <string name="facebook">facebook</string>
+    <string name="price">PRICE            :</string>
+    <string name="go_to_home_page"><u>Go to home page</u></string>
+    <string name="no_order_yet">No Order Book Yet \n <u>Please Book a Service Now</u></string>
+    <string name="no_past_order_yet">No Past Order Book Yet \n <u>Please Book a Service Now</u></string>
+    <string name="no_cart_items">No Cart Items Yet \n <u>Please Book a Service Now</u></string>
+    <string name="you_are_not_selected_any_address_yet">You are not selected any address yet \n <u>Please Add Your Address</u></string>
+    <string name="cart">Cart</string>
+    <string name="book_your_services_now">Book your services now</string>
+    <string name="total_payable_amount">TOTAL PAYABLE AMOUNT</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="search_your_service">Search your service</string>
+    <string name="thank_you">THANK YOU !</string>
+    <string name="home">Home</string>
+    <string name="my_orders">My Orders</string>
+    <string name="help">Help?</string>
+    <string name="my_address">My Address</string>
+    <string name="share_oky">Share OKY</string>
+    <string name="make_payment">Make Payment</string>
+    <string name="select_address">Select Address</string>
+    <string name="first_login">First Login</string>
+</resources>

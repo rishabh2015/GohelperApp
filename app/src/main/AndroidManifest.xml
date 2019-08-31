@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="in.gohelper">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBu798wmz7Y3NmPLC13JxEHgzKmfH9wfOk" />
+
+        <activity
+            android:name="in.gohelper.activity.MainActivity"
+            android:label="@string/gohelper"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://recipe-app.com/recipe" -->
+                <data
+                    android:host="in.gohelper"
+                    android:pathPrefix="/ac"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="in.gohelper.activity.MobileRegistrationActivity"
+            android:label="Mobile Registration"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="in.gohelper.activity.ServiceActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="in.gohelper.activity.AutoCompleteTextActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="in.gohelper.activity.MyAccountActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="My Account"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="in.gohelper.activity.ReviewActivity"
+            android:label="Review"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name="in.gohelper.activity.AddAddressActivity"
+            android:label="Add Address"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="in.gohelper.activity.ServiceQuestionActivity"
+            android:label="Questions"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="in.gohelper.activity.MyCartActivity"
+            android:label="My Cart"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="in.gohelper.activity.ManageAddressActivity"
+            android:label="Manage Address"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="in.gohelper.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="in.gohelper.activity.OtpVerifyActivity"
+            android:label="@string/title_activity_otp_verify"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="in.gohelper.activity.PaymentActivity"
+            android:label="@string/Payment_Options"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="in.gohelper.activity.ThankYouPageActivity"
+            android:label="Thank You"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="in.gohelper.activity.OrdersActivity"
+            android:label="My Orders"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="in.gohelper.activity.ContactUsActivity"
+            android:label="Contact Us"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="in.gohelper.activity.AboutUsActivity"
+            android:label="About us"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="in.gohelper.activity.FAQActivity"
+            android:label="FAQ"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="in.gohelper.activity.PrivacyPolicyActivity"
+            android:label="Privacy Policy"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+
+        <receiver
+            android:name="in.gohelper.utils.SmsReceiver"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="in.gohelper.activity.BaseActivity"
+            android:label="@string/title_activity_base"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="in.gohelper.activity.OrderListActivity"
+            android:label="@string/order_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="bbc79915ed1963cecdaa1ec21f03cb2f5410af09" />
+
+
+    </application>
+
+</manifest>

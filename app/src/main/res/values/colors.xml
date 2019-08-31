@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2874F0</color>
+    <color name="colorPrimaryDark">#2368D7</color>
+    <color name="colorAccent">#2368D7</color>
+    <color name="colorBlue">#00008B</color>
+    <color name="button_pressed">#ff8a00</color>
+    <color name="button_focused">#ff8a00</color>
+    <color name="button_default">#1c76bb</color>
+    <color name="strokeColor">#FF777777</color>
+    <color name="view">#F4F4F4</color>
+    <color name="dark_view">#F4F4F4</color>
+    <color name="cartBackgroundColor">#E5E6EB</color>
+    <color name="WalletColor">#696969</color>
+    <color name="disable">#A9A9A9</color>
+    <color name="couponButton">#939393</color>
+    <color name="priceColor">#666666</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="mycart_list_color">#4c4c4c</color>
+    <color name="buttonpressed">#336699</color>
+    <color name="blue_view">#20AEFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="blue">#03A9F4</color>
+    <color name="facebookButton">#475993</color>
+    <color name="selected_green">#11ff88</color>
+    <color name="selected_grey">#d3d3d3</color>
+    <color name="facebook_color">#475993</color>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_thanku"
+        android:text="@string/thank_you"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="106dp"
+        android:layout_gravity="center" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/checked_symbol"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_thanks_for_shooping"
+        android:layout_marginTop="@dimen/dp_30"
+        android:clickable="true"
+        android:layout_gravity="center"
+        android:text="@string/thanku_for_using_service"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_18" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_enjoy_your_purchse"
+        android:clickable="true"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_gravity="center"
+        android:text="@string/enjoy_your_purchse"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_18" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_continue_shoping"
+        android:layout_marginTop="@dimen/dp_20"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:layout_gravity="center"
+        android:text="@string/continue_shopping"
+        android:padding="@dimen/dp_5"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp_14" />
+
+</LinearLayout>

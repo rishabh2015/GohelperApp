@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.MobileRegistrationActivity" >
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enter Your Phone Number"
+        android:id="@+id/textViewGetOTP"
+        android:layout_weight="0.04"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:paddingLeft="10sp"
+        android:id="@+id/et_mobile_number"
+        android:hint="Enter your number"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/textViewGetOTP"
+        android:layout_marginTop="20dp"
+        android:maxLength="15"/>
+
+    <Button
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:text="Get OTP"
+        android:id="@+id/btnGetOTP"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.01"
+        android:layout_below="@+id/et_mobile_number"
+        android:layout_marginTop="25dp"
+        android:textColor="#fff"
+        android:background="#003366"
+        android:layout_marginLeft="10dp"
+        />
+
+</RelativeLayout>

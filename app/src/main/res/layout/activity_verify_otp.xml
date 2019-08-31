@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/edit_phone_number"
+        android:layout_marginTop="16dp"
+        android:padding="@dimen/dp_10"
+        android:layout_width="wrap_content"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/edit_phone_number"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:hint="@string/verification_code"
+        android:inputType="number"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:textAlignment="center" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_verify"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/sp_16" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/buttonVerify"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_timer"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        style="?attr/actionButtonStyle"
+        android:clickable="true"
+        android:background="@drawable/button_click_background"
+        android:onClick="onClickOtpVerify"
+        android:text="@string/verify"
+        android:textColor="@color/white" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvResend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonVerify"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:onClick="onClickResend"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        android:paddingTop="@dimen/dp_5"
+        android:text="@string/resend"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp_17"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:id="@+id/progress_bar"
+        android:progressDrawable="@drawable/circular_progress_bar"/>
+
+
+</RelativeLayout>

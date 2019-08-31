@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.AutoCompleteTextActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/search_toolbar" />
+
+    <ListView
+        android:id="@+id/listViewSuggestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:divider="@color/view"
+        android:dividerHeight="@dimen/dp_1"
+        android:drawSelectorOnTop="true">
+    </ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No Result Found"
+        android:visibility="gone"
+        android:id="@+id/tv_no_result_found"/>
+
+</RelativeLayout>

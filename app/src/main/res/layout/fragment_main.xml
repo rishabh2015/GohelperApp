@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="8sp">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            style="?attr/actionButtonStyle"
+            android:clickable="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/search_view_corner"
+            android:drawableLeft="@drawable/ic_magnifier"
+            android:drawablePadding="10dp"
+            android:gravity="left|center"
+            android:hint="@string/search_for_a_device"
+            android:paddingLeft="15dp"
+            android:paddingRight="@dimen/dp_15"
+            android:textColorHint="#7e7e7e" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_search_layout"
+        android:background="?attr/selectableItemBackground"
+        android:fillViewport="true">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/carouselView"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                app:animateOnBoundary="true"
+                app:fillColor="@color/colorPrimary"
+                app:indicatorGravity="bottom|center"
+                app:pageColor="#00000000"
+                app:radius="3dp"
+                app:slideInterval="5000"
+                app:strokeColor="@color/strokeColor"
+                app:strokeWidth="1dp">
+            </com.synnapps.carouselview.CarouselView>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/carouselView"
+                android:background="@drawable/button_click_background"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:maxLength="65"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dp_27"
+                android:paddingRight="@dimen/dp_35"
+                android:paddingTop="6dp"
+                android:text="@string/add_your_current_location"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                tools:ignore="UnusedAttribute" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/mapIcon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/carouselView"
+                android:contentDescription="@string/app_name"
+                android:paddingLeft="5dp"
+                android:paddingRight="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_3"
+                android:src="@drawable/ic_placeholder" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/AddressEdit"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignRight="@+id/tv_address"
+                android:layout_below="@id/carouselView"
+                android:layout_gravity="end"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="7sp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/pencil" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_15"
+                android:layout_below="@+id/tv_address"
+                android:background="@color/view" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_topServiceTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view7"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:padding="@dimen/dp_16"
+                android:text="@string/book_your_services_now"
+                android:textSize="@dimen/sp_14" />
+
+            <View
+                android:id="@+id/view_top_service"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@id/tv_topServiceTitle"
+                android:background="@color/view" />
+
+            <in.gohelper.utils.MyGridView
+                android:id="@+id/grid_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_top_service"
+                android:gravity="center"
+                android:numColumns="4" />
+
+            <View
+                android:id="@+id/view_my_grid_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/grid_view1"
+                android:background="@color/view" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/happyCustomers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_my_grid_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_8"
+                android:paddingBottom="@dimen/dp_4"
+                android:text="@string/happy_customers"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_2"
+                android:layout_alignBottom="@id/happyCustomers"
+                android:layout_centerHorizontal="true"
+                android:background="@color/blue_view" />
+
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/carouselView1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/view6"
+                android:background="@drawable/layout_corner_home"
+                app:fillColor="@color/colorPrimary"
+                app:indicatorGravity="bottom|center"
+                app:pageColor="#00000000"
+                app:radius="3dp"
+                app:slideInterval="5000"
+                app:strokeColor="#FF777777"
+                app:strokeWidth="1dp">
+            </com.synnapps.carouselview.CarouselView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@id/carouselView1"
+                android:background="@color/view" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/textview_emergency_service"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_below="@+id/carouselView1"
+                android:layout_marginTop="@dimen/dp_8"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_2"
+                android:text="@string/emergency_customers"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:layout_alignBottom="@id/textview_emergency_service"
+                android:layout_centerHorizontal="true"
+                android:background="@color/blue_view" />
+
+            <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/grid_view_down"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_emergency_service"
+                android:columnWidth="70dp"
+                android:numColumns="4"
+                android:paddingBottom="10dp"
+                android:scrollbars="horizontal"
+                android:stretchMode="columnWidth">
+            </GridView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@id/grid_view_down"
+                android:background="@color/view" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/shareApp"
+                style="?attr/actionButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/grid_view_down"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:clickable="true"
+                android:src="@drawable/logosmall" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/shareLove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shareApp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/share_the_love"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shareLove"
+                android:layout_centerHorizontal="true"
+                android:text="@string/share_the_love_by_inviting_your_friends"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>
